@@ -117,7 +117,6 @@ if __name__ == "__main__":
     crawler = TedCrawler()
     counter = 1
     while crawler.current_page_no < crawler.last_page:
-        crawler.get_next_page()
         talk_list = crawler.get_talk_list()
         for talk in talk_list:
             sleep(3)
@@ -131,6 +130,8 @@ if __name__ == "__main__":
         # if crawler.current_page_no % 10 == 0:
         #     crawler.write_to_json(path_name=f"TED_transcripts_{counter}.json")
         #     counter += 1
+        crawler.get_next_page()
+
 
     crawler.write_to_json(path_name=f"TED_transcripts_{counter}.json")
 

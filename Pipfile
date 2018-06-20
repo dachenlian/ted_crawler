@@ -10,6 +10,13 @@ requests = "*"
 ipykernel = "*"
 lxml = "*"
 pyquery = "*"
+keras = "*"
+tensorflow-gpu = "*"
+"autopep8" = "*"
+jupyter-contrib-nbextensions = "*"
+jieba = "*"
+nltk = "*"
+fake-useragent = "*"
 
 [dev-packages]
 
